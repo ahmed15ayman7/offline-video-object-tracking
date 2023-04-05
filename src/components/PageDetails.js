@@ -26,7 +26,7 @@ export const PageDetails = () => {
         <p>Ratings: {film.vote_count}</p>
         <p>details: {film.overview}</p>
         <div className='d-flex' style={{justifyContent:'space-evenly'}}>
-            <Link to={'/'}><Button style={{backgroundImage: 'linear-gradient(50deg,rgb(112, 5, 206),rgb(80, 0, 35))',border:'none'}}> Go to Familly movies</Button></Link>
+            <Link to={'/Familly-Movies/'}><Button style={{backgroundImage: 'linear-gradient(50deg,rgb(112, 5, 206),rgb(80, 0, 35))',border:'none'}}> Go to Familly movies</Button></Link>
             {film.video===true?<Button style={{backgroundImage: 'linear-gradient(50deg,rgb(112, 5, 206),rgb(80, 0, 35))',border:'none'}}><a href={`${film.video}`} >Watch to movie</a> </Button>:null}
         </div>
         </Col>
