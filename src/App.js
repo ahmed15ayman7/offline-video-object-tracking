@@ -50,8 +50,8 @@ function App() {
       <NavScrollExample fun={searshMovise} />
       
       <Routes>
-        <Route path={`/`} element={<Home details={movise} Pagination={Pagination} handlePageClick={handlePageClick}/>} />
-        <Route path={`/movie/:id`} element={<PageDetails/>} />
+        <Route path={`/Familly-Movies/`} element={<Home details={movise} Pagination={Pagination} handlePageClick={handlePageClick}/>} />
+        <Route path={`/Familly-Movies/movie/:id`} element={<PageDetails/>} />
       </Routes>
       </BrowserRouter>
       
