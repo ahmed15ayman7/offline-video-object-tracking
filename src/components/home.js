@@ -10,7 +10,7 @@ import AdvancedExample from "./Pagination";
 const Home = ({details,Pagination,handlePageClick,onClickFilm}) => {
 
   let mapping = (e,i) => (
-    <Link to={`/movie/${e.id}`} key={e.id} className='col-lg-3 col-md-4 col-6 mb-3' >
+    <Link to={`/Familly-Movies/movie/${e.id}`} key={e.id} className='col-lg-3 col-md-4 col-6 mb-3' >
       <Card
       vote_count={e.vote_count}
       release_date={e.release_date}
