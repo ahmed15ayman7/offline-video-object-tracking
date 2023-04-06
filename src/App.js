@@ -46,12 +46,12 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/Familly-Movies">
       <NavScrollExample fun={searshMovise} />
       
       <Routes>
-        <Route path={`/Familly-Movies/`} element={<Home details={movise} Pagination={Pagination} handlePageClick={handlePageClick}/>} />
-        <Route path={`/Familly-Movies/movie/:id`} element={<PageDetails/>} />
+        <Route path={`/`} element={<Home details={movise} Pagination={Pagination} handlePageClick={handlePageClick}/>} />
+        <Route path={`/movie/:id`} element={<PageDetails/>} />
       </Routes>
       </BrowserRouter>
       
